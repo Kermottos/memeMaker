@@ -35,11 +35,11 @@
             this.topText = new System.Windows.Forms.TextBox();
             this.bottomLabel = new System.Windows.Forms.Label();
             this.topLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.preview = new System.Windows.Forms.PictureBox();
             this.topMemeLabel = new System.Windows.Forms.Label();
             this.bottomMemeLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.preview)).BeginInit();
             this.SuspendLayout();
             // 
             // openButton
@@ -82,6 +82,7 @@
             this.bottomText.Name = "bottomText";
             this.bottomText.Size = new System.Drawing.Size(247, 119);
             this.bottomText.TabIndex = 3;
+            this.bottomText.TextChanged += new System.EventHandler(this.bottomText_TextChanged);
             // 
             // topText
             // 
@@ -90,6 +91,7 @@
             this.topText.Name = "topText";
             this.topText.Size = new System.Drawing.Size(240, 122);
             this.topText.TabIndex = 2;
+            this.topText.TextChanged += new System.EventHandler(this.topText_TextChanged);
             // 
             // bottomLabel
             // 
@@ -111,14 +113,14 @@
             this.topLabel.TabIndex = 0;
             this.topLabel.Text = "Top Text";
             // 
-            // pictureBox1
+            // preview
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(493, 39);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(295, 341);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.preview.Location = new System.Drawing.Point(493, 39);
+            this.preview.Name = "preview";
+            this.preview.Size = new System.Drawing.Size(295, 341);
+            this.preview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.preview.TabIndex = 3;
+            this.preview.TabStop = false;
             // 
             // topMemeLabel
             // 
@@ -127,10 +129,8 @@
             this.topMemeLabel.ForeColor = System.Drawing.Color.White;
             this.topMemeLabel.Location = new System.Drawing.Point(490, 55);
             this.topMemeLabel.Name = "topMemeLabel";
-            this.topMemeLabel.Size = new System.Drawing.Size(63, 26);
+            this.topMemeLabel.Size = new System.Drawing.Size(0, 26);
             this.topMemeLabel.TabIndex = 4;
-            this.topMemeLabel.Text = "label1";
-            this.topMemeLabel.TextChanged += new System.EventHandler(this.topMemeLabel_TextChanged);
             // 
             // bottomMemeLabel
             // 
@@ -139,10 +139,8 @@
             this.bottomMemeLabel.ForeColor = System.Drawing.Color.White;
             this.bottomMemeLabel.Location = new System.Drawing.Point(490, 237);
             this.bottomMemeLabel.Name = "bottomMemeLabel";
-            this.bottomMemeLabel.Size = new System.Drawing.Size(66, 26);
+            this.bottomMemeLabel.Size = new System.Drawing.Size(0, 26);
             this.bottomMemeLabel.TabIndex = 5;
-            this.bottomMemeLabel.Text = "label2";
-            this.bottomMemeLabel.TextChanged += new System.EventHandler(this.bottomMemeLabel_TextChanged);
             // 
             // Form1
             // 
@@ -151,7 +149,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.bottomMemeLabel);
             this.Controls.Add(this.topMemeLabel);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.preview);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.openButton);
@@ -159,7 +157,7 @@
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.preview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,7 +172,7 @@
         private System.Windows.Forms.TextBox topText;
         private System.Windows.Forms.Label bottomLabel;
         private System.Windows.Forms.Label topLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox preview;
         private System.Windows.Forms.Label topMemeLabel;
         private System.Windows.Forms.Label bottomMemeLabel;
     }

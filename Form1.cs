@@ -20,16 +20,16 @@ namespace memeMaker
             InitializeComponent();
         }
 
-        private void topMemeLabel_TextChanged(object sender, EventArgs e)
+        private void topText_TextChanged(object sender, EventArgs e)
         {
-            topText.Text = topMemeLabel.Text;
-            topLabel.MaximumSize = new Size(pictureBox1.Width, 200);
+            topMemeLabel.Text = topText.Text;
+            topLabel.MaximumSize = new Size(preview.Width, 200);
         }
 
-        private void bottomMemeLabel_TextChanged(object sender, EventArgs e)
+        private void bottomText_TextChanged(object sender, EventArgs e)
         {
-            bottomLabel.Text = bottomMemeLabel.Text;
-            bottomLabel.MaximumSize = new Size(pictureBox1.Width, 200);
+            bottomMemeLabel.Text = bottomText.Text;
+            bottomLabel.MaximumSize = new Size(preview.Width, 200);
         }
 
         private void openButton_Click(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace memeMaker
             {
                 try
                 {
-                    pictureBox1.Image = Image.FromFile(openImage.FileName);
+                    preview.Image = Image.FromFile(openImage.FileName);
                     imageFile = openImage.FileName;
                 }
                 catch (Exception ex)
