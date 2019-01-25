@@ -1,0 +1,10 @@
+C:\Users\kacpe\source\repos\memeMaker\memeMaker\obj\Debug\memeMaker.csprojAssemblyReference.cache
+C:\Users\kacpe\source\repos\memeMaker\memeMaker\obj\Debug\memeMaker.Form1.resources
+C:\Users\kacpe\source\repos\memeMaker\memeMaker\obj\Debug\memeMaker.Properties.Resources.resources
+C:\Users\kacpe\source\repos\memeMaker\memeMaker\obj\Debug\memeMaker.csproj.GenerateResource.cache
+C:\Users\kacpe\source\repos\memeMaker\memeMaker\obj\Debug\memeMaker.csproj.CoreCompileInputs.cache
+C:\Users\kacpe\source\repos\memeMaker\memeMaker\bin\Debug\memeMaker.exe.config
+C:\Users\kacpe\source\repos\memeMaker\memeMaker\bin\Debug\memeMaker.exe
+C:\Users\kacpe\source\repos\memeMaker\memeMaker\bin\Debug\memeMaker.pdb
+C:\Users\kacpe\source\repos\memeMaker\memeMaker\obj\Debug\memeMaker.exe
+C:\Users\kacpe\source\repos\memeMaker\memeMaker\obj\Debug\memeMaker.pdb
